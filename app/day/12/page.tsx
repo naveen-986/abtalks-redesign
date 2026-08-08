@@ -70,18 +70,40 @@ export default function ChallengeDay() {
         </div>
       </div>
 
-      {/* Resources */}
+{/* Helpful Resources */}
 <div className="mt-6 rounded-2xl border border-slate-800 bg-slate-900 p-6">
-  <h2 className="text-xl font-bold">
-    📚 Helpful Resources
+  <p className="text-sm font-semibold text-violet-400">
+    📚 HELPFUL RESOURCES
+  </p>
+
+  <h2 className="mt-2 text-xl font-bold">
+    Stuck? Start here.
   </h2>
 
-  <ul className="mt-4 space-y-3 text-slate-300">
-    <li>🔗 OpenWeather API Documentation</li>
-    <li>🎨 Responsive UI Inspiration</li>
-    <li>📘 React Documentation</li>
-  </ul>
+  <div className="mt-5 space-y-3">
+    <div className="rounded-xl bg-slate-800 p-4">
+      <p className="font-semibold">🌦️ Weather API</p>
+      <p className="mt-1 text-sm text-slate-400">
+        Learn how to fetch weather data from an API.
+      </p>
+    </div>
+
+    <div className="rounded-xl bg-slate-800 p-4">
+      <p className="font-semibold">⚛️ React Docs</p>
+      <p className="mt-1 text-sm text-slate-400">
+        Reference for building your React components.
+      </p>
+    </div>
+
+    <div className="rounded-xl bg-slate-800 p-4">
+      <p className="font-semibold">🎨 UI Inspiration</p>
+      <p className="mt-1 text-sm text-slate-400">
+        Ideas for creating a clean responsive dashboard.
+      </p>
+    </div>
+  </div>
 </div>
+
 
       {/* Submission */}
       <div className="mt-6 rounded-2xl border border-slate-800 bg-slate-900 p-6">
