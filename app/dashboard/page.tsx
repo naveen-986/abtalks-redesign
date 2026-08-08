@@ -48,6 +48,125 @@ export default function Dashboard() {
     Start Today's Challenge
   </button>
 </div>
+
+{/* Achievements */}
+<div className="mt-6 rounded-2xl border border-slate-800 bg-slate-900 p-6">
+  <h2 className="text-xl font-bold">🏆 Achievements</h2>
+
+  <div className="mt-5 grid grid-cols-2 gap-4">
+    <div className="rounded-xl bg-slate-800 p-4 text-center">
+      <p className="text-3xl">🔥</p>
+      <p className="mt-2 font-semibold">7-Day Streak</p>
+    </div>
+
+    <div className="rounded-xl bg-slate-800 p-4 text-center">
+      <p className="text-3xl">💻</p>
+      <p className="mt-2 font-semibold">First Commit</p>
+    </div>
+
+    <div className="rounded-xl bg-slate-800 p-4 text-center">
+      <p className="text-3xl">🚀</p>
+      <p className="mt-2 font-semibold">Portfolio Builder</p>
+    </div>
+
+    <div className="rounded-xl bg-slate-800 p-4 text-center">
+      <p className="text-3xl">⭐</p>
+      <p className="mt-2 font-semibold">Top Learner</p>
+    </div>
+  </div>
+</div>
+
+{/* Weekly Activity */}
+<div className="mt-6 rounded-2xl border border-slate-800 bg-slate-900 p-6">
+  <h2 className="text-xl font-bold">📅 Weekly Activity</h2>
+
+  <div className="mt-6 flex justify-between">
+    {[
+      { day: "M", active: true },
+      { day: "T", active: true },
+      { day: "W", active: true },
+      { day: "T", active: false },
+      { day: "F", active: true },
+      { day: "S", active: true },
+      { day: "S", active: true },
+    ].map((item, index) => (
+      <div key={index} className="flex flex-col items-center">
+        <div
+          className={`h-8 w-8 rounded-full ${
+            item.active ? "bg-violet-500" : "bg-slate-700"
+          }`}
+        ></div>
+
+        <p className="mt-2 text-xs text-slate-400">
+          {item.day}
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
+
+{/* Leaderboard */}
+<div className="mt-6 rounded-2xl border border-slate-800 bg-slate-900 p-6">
+  <h2 className="text-xl font-bold">🥇 Leaderboard</h2>
+
+  <div className="mt-5 flex items-center justify-between">
+    <div>
+      <p className="text-slate-400">Current Rank</p>
+
+      <h3 className="mt-2 text-4xl font-bold">
+        #18
+      </h3>
+    </div>
+
+    <div className="rounded-xl bg-violet-600 px-5 py-3 font-semibold">
+      Top 5%
+    </div>
+  </div>
+</div>
+
+{/* AI Coach */}
+<div className="mt-6 mb-10 rounded-2xl border border-violet-500/30 bg-violet-500/10 p-6">
+  <h2 className="text-xl font-bold">
+    🤖 AI Coach
+  </h2>
+
+  <p className="mt-4 text-slate-300">
+    You're ahead of 72% of students.
+  </p>
+
+  <p className="mt-2 text-slate-300">
+    Complete today's challenge before <span className="font-semibold text-white">8:00 PM</span> to keep your streak alive.
+  </p>
+
+  <div className="mt-5 rounded-xl bg-slate-900 p-4">
+    <p className="text-sm text-violet-400">
+      Today's Suggestion
+    </p>
+
+    <p className="mt-2">
+      Push your GitHub commit before writing your LinkedIn post to maintain a clean workflow.
+    </p>
+  </div>
+</div>
+
+{/* Quick Stats */}
+<div className="mt-6 mb-10 grid grid-cols-3 gap-4">
+  <div className="rounded-xl bg-slate-900 p-4 text-center">
+    <p className="text-2xl font-bold text-violet-400">60</p>
+    <p className="text-xs text-slate-400">Commits</p>
+  </div>
+
+  <div className="rounded-xl bg-slate-900 p-4 text-center">
+    <p className="text-2xl font-bold text-violet-400">32</p>
+    <p className="text-xs text-slate-400">Posts</p>
+  </div>
+
+  <div className="rounded-xl bg-slate-900 p-4 text-center">
+    <p className="text-2xl font-bold text-violet-400">12</p>
+    <p className="text-xs text-slate-400">Projects</p>
+  </div>
+</div>
+
     </main>
   );
 }

@@ -70,6 +70,19 @@ export default function ChallengeDay() {
         </div>
       </div>
 
+      {/* Resources */}
+<div className="mt-6 rounded-2xl border border-slate-800 bg-slate-900 p-6">
+  <h2 className="text-xl font-bold">
+    📚 Helpful Resources
+  </h2>
+
+  <ul className="mt-4 space-y-3 text-slate-300">
+    <li>🔗 OpenWeather API Documentation</li>
+    <li>🎨 Responsive UI Inspiration</li>
+    <li>📘 React Documentation</li>
+  </ul>
+</div>
+
       {/* Submission */}
       <div className="mt-6 rounded-2xl border border-slate-800 bg-slate-900 p-6">
         <h2 className="text-xl font-bold">
