@@ -149,6 +149,68 @@ export default function Dashboard() {
   </div>
 </div>
 
+{/* Challenge Status */}
+<div className="mt-6 rounded-2xl border border-slate-800 bg-slate-900 p-6">
+  <p className="text-sm font-semibold text-violet-400">
+    CHALLENGE STATUS
+  </p>
+
+  <h3 className="mt-2 text-xl font-bold">
+    Keep your momentum going 🚀
+  </h3>
+
+  <div className="mt-5 space-y-3">
+
+    {/* First Day State */}
+    <div className="rounded-xl bg-slate-800 p-4">
+      <p className="font-semibold">
+        🌱 Starting your journey?
+      </p>
+
+      <p className="mt-1 text-sm text-slate-400">
+        No streak yet. Complete your first challenge to start your
+        60-day journey.
+      </p>
+
+      <button className="mt-3 rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold">
+        Start Day 1
+      </button>
+    </div>
+
+    {/* Missed Day State */}
+    <div className="rounded-xl bg-slate-800 p-4">
+      <p className="font-semibold">
+        ⚠️ Missed a day?
+      </p>
+
+      <p className="mt-1 text-sm text-slate-400">
+        Don't worry. Your challenge can continue today.
+      </p>
+
+      <button className="mt-3 rounded-lg border border-slate-700 px-4 py-2 text-sm font-semibold">
+        Continue Challenge
+      </button>
+    </div>
+
+    {/* Empty Profile State */}
+    <div className="rounded-xl bg-slate-800 p-4">
+      <p className="font-semibold">
+        👤 Complete your profile
+      </p>
+
+      <p className="mt-1 text-sm text-slate-400">
+        Add your GitHub and LinkedIn profiles to build your public
+        developer presence.
+      </p>
+
+      <button className="mt-3 rounded-lg border border-slate-700 px-4 py-2 text-sm font-semibold">
+        Complete Profile
+      </button>
+    </div>
+
+  </div>
+</div>
+
 {/* Quick Stats */}
 <div className="mt-6 mb-10 grid grid-cols-3 gap-4">
   <div className="rounded-xl bg-slate-900 p-4 text-center">
