@@ -628,7 +628,8 @@ https://github.com/naveen-986/abtalks-redesign
 
 **Live Demo**
 
-_Add deployed Vercel URL here._
+
+https://abtalks-redesign-delta.vercel.app/
 
 **Route Map**
 
